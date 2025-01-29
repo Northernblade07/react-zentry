@@ -63,8 +63,8 @@ const Story = () => {
                         <div className='story-img-content'>
                             <img
                              onMouseLeave={handleMouseLeave}
-                            onMouseUp={handleMouseUp}
-                            onMouseEnter={handleMouseEnter} 
+                            // 
+                            
                             onMouseMove={handleMouseMove}
                             ref={frameRef} src="img/entrance.webp" className='object-contain object-center' alt="entrance" />
 

@@ -95,7 +95,7 @@ const Hero = () => {
       <div className='relative z-10 h-dvh overflow-hidden rounded-lg bg-blue-75' id='video-frame'>
         <div>
           <div className='mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg '>
-            <div onClick={handleMiniVdClick} className='origin-center scale-50 opacity-1 transition-all duration-500 hover:scale-100 hover:opacity-100'>
+            <div onClick={handleMiniVdClick} className='origin-center scale-50 opacity-0 transition-all duration-500 hover:scale-100 hover:opacity-100'>
               <video
                 ref={nextVideoRef}
                 src={getVideoSrc(upcomingVideoIndex)}
@@ -109,14 +109,13 @@ const Hero = () => {
               />
             </div>
           </div>
-          {/* <img src='img/play.svg' alt="" /> */}
 
           <video src={getVideoSrc(CurrentIndex)}
             loop
             muted
             ref={nextVideoRef}
             id='next-video'
-            className='absolute-center invisible absolute z-20 size-64 object-cover object-center'
+            className='absolute-center invisible absolute z-10 size-64 object-cover object-center'
             onLoadedData={handleVideoLoad}
             autoPlay
           />

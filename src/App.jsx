@@ -1,18 +1,22 @@
 // import React from 'react'
 import About from './components/About'
+import Contact from './components/Contact'
 import Features from './components/Features'
+import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Story from './components/story'
 
 const App = () => {
   return (
-    <main className='relative min-h-screen w-screen bg-zinc-700 overflow-x-hidden '>
+    <main className='relative min-h-screen w-screen bg-zinc-100 overflow-x-hidden '>
       <Navbar/>
   <Hero/>
     <About/>
     <Features/>
     <Story/>
+    <Contact/>
+    <Footer/>
     </main>
   )
 }
