@@ -10,7 +10,7 @@ const Button = ({id,title,leftIcon,containerClass,rightIcon }) => {
         <div>
         {title}
         </div>
-        {/* {rightIcon} */}
+        {rightIcon}
         </span>
       </button>
     </div>
