@@ -17,7 +17,7 @@ const {y:currentScrollY} = useWindowScroll();
 useEffect(()=>{
     if (currentScrollY === 0) {
      setIsNavVisible(true);
-     navContainerRef.current.classList.remove('floting-nav');
+     navContainerRef.current.classList.remove('floating-nav');
     }else if (currentScrollY>LastScrollY) {
         setIsNavVisible(false)
         navContainerRef.current.classList.add('floating-nav');
